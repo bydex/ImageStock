@@ -1,0 +1,5 @@
+mixin logo({ className = false })
+    a.logo(class=className href="/")
+        span.logo__icon-wrapper
+            +icon({ iconName: 'unsplash', className: 'logo__icon', viewBoxName: '0 0 28 28' })
+        span.logo__text ImageStock

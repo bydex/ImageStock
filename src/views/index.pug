@@ -1,0 +1,14 @@
+extends layouts/default
+
+block variables
+	- const title = "Поиск"
+	- const isPage = "index";
+
+include ../blocks/pages/index/index
+
+block content
+	+index({ })
+
+block scripts
+	script(src="js/main.js")
+	script(src="js/vendor.js")

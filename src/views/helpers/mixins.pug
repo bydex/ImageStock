@@ -1,0 +1,11 @@
+mixin icon({className = false, iconName, viewBoxName = false})
+    svg(class=className viewbox=viewBoxName)
+        use(xlink:href=`./img/sprites/sprite.svg#${iconName}`)
+
+mixin iconImg({className = false, iconName})
+    img(src=`./img/sprites/sprite.svg#${iconName}` class=className alt="")
+
+mixin picture({path = '', name, imgType, sourceType = 'webp', imgClass = false})
+    picture
+        source(srcset= `./img/${path}/${name}.${sourceType}` type=`image/${sourceType}`)
+        img(class=imgClass src= `./img/${path}/${name}.${imgType}` alt=name)

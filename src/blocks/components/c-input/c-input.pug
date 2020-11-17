@@ -1,0 +1,7 @@
+mixin c-input({ className = false, labelName = false, typeName  = 'text', valueName = false, placeholderName = false, iconName = false })
+    label.c-input(class=className)
+        if (iconName)
+            +icon({iconName: iconName, className: 'c-input__icon'})
+        if (labelName)
+            span.label__title #{labelName}
+        input.c-input__field(type=typeName value=valueName placeholder=placeholderName)

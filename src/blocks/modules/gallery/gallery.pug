@@ -1,0 +1,10 @@
+mixin gallery({ className = false })
+    include ../../components/gallery-switch/gallery-switch
+    include ../../components/card/card
+    .gallery(class=className)
+        .gallery__container
+            .gallery__top
+                +gallery-switch({ className: 'gallery__switch' })
+            .gallery__wrapper
+                .gallery__row
+                    //- +card({ className: 'gallery__card' })

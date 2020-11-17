@@ -1,0 +1,9 @@
+mixin categories({ className = false })
+
+    - const categories = [ 'Wallpapers', 'Textures', 'Patterns', 'Nature', 'Current', 'Events', 'Architecture', 'Business', 'Work', 'Film', 'Animals', 'Travel', 'Fashion', 'Food', 'Drink', 'Spirituality', 'Experimental', 'People', 'Health', 'Arts', 'Culture', ];
+
+    .categories(class=className)
+        ul.categories__list
+            each val, index in categories
+                li.categories__item
+                    button.categories__link #{val}

@@ -1,0 +1,12 @@
+mixin ui-kit({ className = false })
+    include ../../components/c-input/c-input
+
+
+    .ui-kit ui-kit
+        +c-input({
+            className: 'ui-kit__input',
+            labelName: 'Имя инпута',
+            typeName: 'tel',
+            valueName: '123123',
+            iconName: 'logo',
+        })

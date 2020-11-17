@@ -1,0 +1,9 @@
+mixin gallery-switch({ className = false })
+    .gallery-switch(class=className)
+        ul.gallery-switch__list
+            li.gallery-switch__item.gallery-switch__item_active
+                button.gallery-switch__button
+                    +icon({ iconName: 'grid_1', className: 'gallery-switch__icon', viewBoxName: '0 0 23 23' })
+            li.gallery-switch__item
+                button.gallery-switch__button
+                    +icon({ iconName: 'grid_2', className: 'gallery-switch__icon', viewBoxName: '0 0 23 23' })

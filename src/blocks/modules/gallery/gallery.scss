@@ -1,0 +1,33 @@
+.gallery {
+    @include grid();
+
+    &__top {
+        padding: {
+            top: 72px;
+            bottom: 72px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__switch {
+
+    }
+    &__wrapper {
+        column-count: 4;
+        column-gap: 10px;
+    }
+    &__row {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &__card {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

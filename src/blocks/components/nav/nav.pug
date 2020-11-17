@@ -1,0 +1,13 @@
+mixin nav({ className = false })
+    nav.nav(class=className)
+        ul.nav__list
+            li.nav__item
+                a.nav__link(href="./likes.html")
+                    span.nav__icon-wrapper
+                        +icon({ className: 'nav__icon', iconName: 'like', viewBoxName: '0 0 23 21' })
+                    span.nav__title Избранное
+            li.nav__item
+                a.nav__link(href="./history.html")
+                    span.nav__icon-wrapper
+                        +icon({ className: 'nav__icon', iconName: 'history', viewBoxName: '0 0 22 20' })
+                    span.nav__title История поиска

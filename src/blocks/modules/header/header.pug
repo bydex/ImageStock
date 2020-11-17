@@ -1,0 +1,17 @@
+mixin header({ className = false })
+
+    include ../../components/logo/logo
+    include ../../components/nav/nav
+    include ../../components/categories/categories
+
+    header.header
+        .header__container
+            .header__row
+                .header__top-line
+                    .header__logo-wraper
+                        +logo({ className: 'header__logo' })
+                    +nav({ className: 'header__nav' })
+                .header__bottom
+                    .header__title-block
+                        input.header__title(placeholder=title)
+                    +categories({ className: 'header__categories' })

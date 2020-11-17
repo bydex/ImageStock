@@ -1,0 +1,20 @@
+mixin card({ className = false })
+    .card(class=className)
+        img.card__img(src="http://placekitten.com/475/260")
+        .card__wrapper
+            .card__inner
+                .card__user
+                    img.card__avatar(src="http://placekitten.com/70/70")
+                    .card__title Vadim Sadovski
+                    .card__subtitle @vadimsadovski
+                .card__controls
+                    ul.card__list
+                        li.card__item(class="card__item--like")
+                            button.card__button
+                                +icon({ iconName: 'like', className: 'card__icon', viewBoxName: '0 0 23 21' })
+                        li.card__item
+                            button.card__button
+                                +icon({ iconName: 'fullscreen', className: 'card__icon', viewBoxName: '0 0 37 36' })
+                        li.card__item
+                            button.card__button
+                                +icon({ iconName: 'download', className: 'card__icon', viewBoxName: '0 0 20 26' })

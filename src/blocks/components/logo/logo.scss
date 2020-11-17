@@ -1,0 +1,20 @@
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &__icon-wrapper {
+        width: 28px;
+        height: 28px;
+    }
+    &__icon {
+        display: block;
+        max-width: 28px;
+        max-height: 28px;
+    }
+    &__text {
+        display: block;
+        margin-left: 24px;
+        font-size: 24px;
+    }
+}
